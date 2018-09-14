@@ -9,7 +9,7 @@
 import Foundation
 
 class DarkSkyAPIClient {
-    fileprivate let darkSkyApiKey = "9a3278cae9c904930ca972c225a570e0"
+    fileprivate let darkSkyApiKey = "9a3278cae9c904930ca972c225a570e0" + "EROR"
     
     lazy var baseUrl: URL = {
         return URL(string: "https://api.darksky.net/forecast/\(self.darkSkyApiKey)/")!
@@ -36,6 +36,7 @@ class DarkSkyAPIClient {
             return
         }
         
+        print (url)
         let request = URLRequest(url: url)
         
         let task = session.dataTask(with: request) {
@@ -51,6 +52,11 @@ class DarkSkyAPIClient {
                         let weather = try self.decoder.decode(Weather.self, from: data)
                         completion(weather, nil)
                     } catch let error {
+                        print(error)
+                        guard error != nil else {
+                            completion(nil, DarkSkyError.unkownError)
+                            return
+                        }
                         completion(nil, error)
                     }
                 } else {
@@ -67,7 +73,7 @@ class DarkSkyAPIClient {
     func getCurrentWeather(at coord: Coordinate, completionHandler completion: @escaping CurrentWeatherCompletionHandler) {
         getWeather(at: coord) {
             weather, error in
-            completion(weather?.currently, nil)
+            completion(weather?.currently, error)
         }
     }
 }
