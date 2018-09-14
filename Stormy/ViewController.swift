@@ -25,10 +25,13 @@ class ViewController: UIViewController {
         
         client.getCurrentWeather(at: Coordinate.alcatraz) { [unowned self]
             currentWeather, error in
-            if let currentWeather = currentWeather {
-                let viewModel = CurrentWeatherViewModel(model: currentWeather)
-                self.displayWeather(using: viewModel)
+            DispatchQueue.main.async {
+                if let currentWeather = currentWeather {
+                    let viewModel = CurrentWeatherViewModel(model: currentWeather)
+                    self.displayWeather(using: viewModel)
+                }
             }
+            
         }
     }
     

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AA4C7F121480F1A004BE4A1 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4C7F021480F1A004BE4A1 /* JSONDownloader.swift */; };
 		6AA4C7F321481347004BE4A1 /* DarkSkyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4C7F221481347004BE4A1 /* DarkSkyError.swift */; };
 		6AA4C7F521481D64004BE4A1 /* DarkSkyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4C7F421481D64004BE4A1 /* DarkSkyAPIClient.swift */; };
 		6AA4C7F721481E25004BE4A1 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4C7F621481E25004BE4A1 /* Coordinate.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6AA4C7F021480F1A004BE4A1 /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		6AA4C7F221481347004BE4A1 /* DarkSkyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyError.swift; sourceTree = "<group>"; };
 		6AA4C7F421481D64004BE4A1 /* DarkSkyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIClient.swift; sourceTree = "<group>"; };
 		6AA4C7F621481E25004BE4A1 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			children = (
 				972470AE20A27F0000050DF7 /* AppDelegate.swift */,
 				972470B020A27F0000050DF7 /* ViewController.swift */,
-				6AA4C7F021480F1A004BE4A1 /* JSONDownloader.swift */,
 				6AA4C7F421481D64004BE4A1 /* DarkSkyAPIClient.swift */,
 				6AA4C7F621481E25004BE4A1 /* Coordinate.swift */,
 				6AA4C7F221481347004BE4A1 /* DarkSkyError.swift */,
@@ -162,7 +159,6 @@
 				6AA4C7F321481347004BE4A1 /* DarkSkyError.swift in Sources */,
 				6AA4C7F92148211E004BE4A1 /* Weather.swift in Sources */,
 				6AA4C7F521481D64004BE4A1 /* DarkSkyAPIClient.swift in Sources */,
-				6AA4C7F121480F1A004BE4A1 /* JSONDownloader.swift in Sources */,
 				972470AF20A27F0000050DF7 /* AppDelegate.swift in Sources */,
 				BE45702520A32C09001FE65B /* CurrentWeatherViewModel.swift in Sources */,
 			);
@@ -309,13 +305,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SHMMFJ7N9P;
+				DEVELOPMENT_TEAM = V44VEL7NMF;
 				INFOPLIST_FILE = Stormy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilyperegrine2.Stormy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilyperegrine.Stormy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,13 +323,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SHMMFJ7N9P;
+				DEVELOPMENT_TEAM = V44VEL7NMF;
 				INFOPLIST_FILE = Stormy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilyperegrine2.Stormy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilyperegrine.Stormy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
